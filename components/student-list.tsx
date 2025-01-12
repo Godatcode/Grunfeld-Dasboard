@@ -23,7 +23,7 @@ const dummyStudents = [
     name: 'Jenish Togadiya',
     points: 980,
     ranking: 2,
-    github_url: 'https://github.com/Jenu-1235',
+    github_url: 'https://github.com/Jenish-1235',
     badge_count: 12,
     certificate_count: 4,
     created_at: '2024-01-15'
@@ -33,7 +33,7 @@ const dummyStudents = [
     name: 'Anish Yadav',
     points: 850,
     ranking: 3,
-    github_url: 'https://github.com/Visy_Ani',
+    github_url: 'https://github.com/Visy-Ani',
     badge_count: 10,
     certificate_count: 3,
     created_at: '2024-02-01'
@@ -43,7 +43,7 @@ const dummyStudents = [
     name: 'Krish ',
     points: 720,
     ranking: 4,
-    github_url: 'https://github.com/krishjaiswal',
+    github_url: 'https://github.com/venkat1701',
     badge_count: 8,
     certificate_count: 2,
     created_at: '2024-02-15'
@@ -53,7 +53,7 @@ const dummyStudents = [
     name: 'Ashmit K Nayak',
     points: 650,
     ranking: 5,
-    github_url: 'https://github.com/Ashmit',
+    github_url: 'https://github.com/BinaryBhakti',
     badge_count: 6,
     certificate_count: 2,
     created_at: '2024-03-01'

@@ -10,7 +10,7 @@ import type { Student } from '@/lib/supabase/types';
 const dummyStudents = [
   {
     id: '1',
-    name: 'Alex Johnson',
+    name: 'Sauhard Gupta',
     points: 1250,
     ranking: 1,
     github_url: 'https://github.com/alex',
@@ -20,7 +20,7 @@ const dummyStudents = [
   },
   {
     id: '2',
-    name: 'Sarah Chen',
+    name: 'Jenish Togadiya',
     points: 980,
     ranking: 2,
     github_url: 'https://github.com/sarah',
@@ -30,7 +30,7 @@ const dummyStudents = [
   },
   {
     id: '3',
-    name: 'Michael Park',
+    name: 'Anish Yadav',
     points: 850,
     ranking: 3,
     github_url: 'https://github.com/michael',
@@ -40,7 +40,7 @@ const dummyStudents = [
   },
   {
     id: '4',
-    name: 'Emma Wilson',
+    name: 'Krish ',
     points: 720,
     ranking: 4,
     github_url: 'https://github.com/emma',
@@ -50,10 +50,10 @@ const dummyStudents = [
   },
   {
     id: '5',
-    name: 'David Lee',
+    name: 'Ashmit K Nayak',
     points: 650,
     ranking: 5,
-    github_url: 'https://github.com/david',
+    github_url: 'https://github.com/Ashmit',
     badge_count: 6,
     certificate_count: 2,
     created_at: '2024-03-01'

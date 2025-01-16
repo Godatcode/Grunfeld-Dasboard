@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
 import Link from 'next/link';
 import { Github } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import type { Student } from '@/lib/supabase/types';
+import { Card } from './ui/card'; 
+import { Badge } from './ui/badge';
+import type { Student } from '../lib/supabase/types'; 
 
 // Dummy data for students
 const dummyStudents = [
   {
     id: '1',
     name: 'Sauhard Gupta',
-    points: 1250,
+    points: 900,
     ranking: 1,
     github_url: 'https://github.com/Sauhard74',
     badge_count: 15,
@@ -60,10 +60,18 @@ const dummyStudents = [
   }
 ] as Student[];
 
-export default function StudentList() {
+interface StudentListProps {
+  searchQuery: string;
+}
+
+export default function StudentList({ searchQuery }: StudentListProps) {
+  const filteredStudents = dummyStudents.filter(student =>
+    student.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="space-y-4">
-      {dummyStudents.map((student) => (
+      {filteredStudents.map((student) => (
         <Card key={student.id} className="p-6 transition-all hover:shadow-lg">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">

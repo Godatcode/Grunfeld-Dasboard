@@ -1,10 +1,14 @@
-import { Suspense } from 'react';
+"use client";
+
+import { Suspense, useState } from 'react';
 import { Search } from 'lucide-react';
-import StudentList from '@/components/student-list';
-import TopLeaderboard from '@/components/top-leaderboard';
-import { Input } from '@/components/ui/input';
+import StudentList from '../components/student-list'; // Corrected import path
+import TopLeaderboard from '../components/top-leaderboard'; // Corrected import path
+import { Input } from '../components/ui/input'; // Corrected import path
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-secondary">
       <main className="container mx-auto px-4 py-8">
@@ -26,6 +30,8 @@ export default function Home() {
                   <Input
                     placeholder="Search students..."
                     className="pl-8"
+                    value={searchQuery}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
                   />
                 </div>
                 <select className="px-3 py-2 rounded-md border bg-background">
@@ -37,7 +43,7 @@ export default function Home() {
               </div>
 
               <Suspense fallback={<div>Loading students...</div>}>
-                <StudentList />
+                <StudentList searchQuery={searchQuery} />
               </Suspense>
             </div>
 

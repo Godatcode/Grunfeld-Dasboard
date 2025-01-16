@@ -2,9 +2,9 @@
 
 import { Suspense, useState } from 'react';
 import { Search } from 'lucide-react';
-import StudentList from '../components/student-list'; // Corrected import path
-import TopLeaderboard from '../components/top-leaderboard'; // Corrected import path
-import { Input } from '../components/ui/input'; // Corrected import path
+import StudentList from '../components/student-list'; 
+import TopLeaderboard from '../components/top-leaderboard'; 
+import { Input } from '../components/ui/input';
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
